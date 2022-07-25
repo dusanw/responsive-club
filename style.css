@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'Awesome';
+    src: url(./assets/fontawesome/webfonts/fa-brands-400.woff2) format("woff2"),
+         url(./assets/fontawesome/webfonts/fa-brands-400.ttf) format("ttf"),
+         url(./assets/fontawesome/webfonts/fa-regular-400.woff2) format("woff2"),
+         url(./assets/fontawesome/webfonts/fa-regular-400.ttf) format("ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: staatliches;
+}
+
+.info-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    height: 1.875rem;
+    background-color: #0A0A0A;
+    color: whitesmoke;
+    font-size: 0.825rem;
+}
+
+@media only screen and (max-width: 780px) {
+    .info-line strong {
+        display: none;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .info-line {
+        display: none;
+    }
+}
+
+
+.location {
+    display: flex;
+    gap: 1.25rem;
+    font-family: staatliches;
+    letter-spacing: 0.19rem;
+}
+
+.location span {
+    color: grey;
+}
+.social-icons {
+    display: inline-flex;
+    font-family: awesome;
+    gap: 0.75rem;
+}
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./images/intro-run_1920x1067.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(60%);
+}
+
+.hero-content {
+    position: relative;
+    font-family: "Monserrat", sans-serif;
+    color: white;
+    text-align: right;
+    margin-right: 8rem;
+    margin-bottom: 10rem;
+}
+
+.hero-meet {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 0;
+    color: #D3A20F;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.hero-subtitle {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-top: 1rem;
+}
+
+.hero-button {
+    background-color: #ae2d59;
+    color: white;
+    border: 1px solid #cb376a;
+    margin-top: 5rem;
+    padding: 0.9375rem 1.875rem;
+    font-family: "Monserrat", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.hero-button:hover {
+    background-color: #cb376a;
+    border: 1px solid #db7598;
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    width: 100vw;
+    background-color: #D3A20F;
+    padding: 0 2rem;
+    font-family: staatliches;
+    letter-spacing: 0.19rem;
+    color: whitesmoke;
+    /*position: fixed;*/
+    z-index: 1;
+    top: 2rem;
+}
+
+.header-nav img {
+    height: 2rem
+}
+
+.header-nav li {
+    display: inline;
+    padding: 0 2rem;
+}
+
+.header-nav li:hover {
+    color:#0A0A0A;
+    cursor: pointer;
+}
+
+.plan {
+    color: whitesmoke;
+    display: flex;
+    margin: 0;
+    letter-spacing: 0.1rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .plan {
+        flex-direction: column;
+    }
+}
+
+.card {
+    width: 25%;
+    padding: 2rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
+
+.card img {
+    height: 5rem;
+    color: whitesmoke;
+}
+
+#meal-plan {
+    background-color: #a4641a;
+}
+
+#workout {
+    background-color: #b56e1d;
+}
+
+#track {
+    background-color: #c6791f;
+}
+
+#results {
+    background-color: #d78322;
+}
+
+.image-galery {
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#galery-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: 2;
+    justify-content: space-evenly;
+    gap: 3rem;
+}
+
+.box-shadow {
+    width: 22rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.box-shadow img {
+    width: 20rem;
+    height: 15rem
+}
+
+.box-shadow h2 {
+    color: #D3A20F;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+    background: linear-gradient(0deg, rgba(20, 20, 20, 0.7), rgba(30, 30, 30, 0.5)),
+    url(./images/intro-monkey-bells_1920x1080.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    letter-spacing: 0.15rem;
+    gap: 3rem
+}
+
+.footer span {
+    color: #D3A20F;
+}
+
+.footer-box {
+    width: 40%;
+}
