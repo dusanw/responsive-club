@@ -169,6 +169,12 @@ body {
     }
 }
 
+@media only screen and (max-width: 780px) {
+    .plan {
+        flex-direction: column;
+    }
+}
+
 .card {
     width: 25%;
     padding: 2rem;
@@ -180,6 +186,12 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 780px) {
     .card {
         width: 100%;
     }
